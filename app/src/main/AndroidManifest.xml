@@ -13,6 +13,12 @@
         android:theme="@style/Theme.FLCalendar"
         tools:targetApi="31">
         <activity
+            android:name=".about"
+            android:exported="false" />
+        <activity
+            android:name=".theme"
+            android:exported="false" />
+        <activity
             android:name=".Date_to_Day"
             android:exported="false" />
         <activity

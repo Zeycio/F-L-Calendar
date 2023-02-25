@@ -15,7 +15,7 @@ class Date_to_Day : AppCompatActivity() {
     @SuppressLint("MissingInflatedId", "WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_date_to_day)
 
 
         val calbt = findViewById<Button>(R.id.calb)
