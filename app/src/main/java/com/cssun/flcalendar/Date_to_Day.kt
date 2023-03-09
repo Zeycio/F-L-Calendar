@@ -5,6 +5,7 @@ import android.app.DatePickerDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.CalendarView
 import android.widget.TextView
 import java.text.SimpleDateFormat
 import java.util.*
@@ -17,7 +18,7 @@ class Date_to_Day : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_date_to_day)
 
-
+        val calendarView2 = findViewById<CalendarView>(R.id.CustcalendarView)
         val calbt = findViewById<Button>(R.id.calb)
         val getda = findViewById<TextView>(R.id.getd)
 
@@ -53,6 +54,12 @@ class Date_to_Day : AppCompatActivity() {
 
                 getda.text= "it's $dayName on $date"
 
+                    val CalendarView2 = Calendar.getInstance().apply {
+                        set(Calendar.YEAR,Calendar.YEAR)
+                        set(Calendar.MONTH,Calendar.MONTH)
+
+                    }
+                    calendarView2.date = calendar.timeInMillis
 
             }, getDate.get(Calendar.YEAR), getDate.get(Calendar.MONTH), getDate.get(Calendar.DAY_OF_MONTH))
             datepicker.show()

@@ -8,6 +8,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.RelativeLayout
+import androidx.cardview.widget.CardView
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
@@ -34,7 +36,7 @@ class featureFragment : Fragment(), View.OnClickListener {
     ): View? {
 
         val view: View = inflater!!.inflate(R.layout.fragment_feature, container, false)
-        val btn_ddd: Button = view.findViewById(R.id.btn_date_to_day)
+        val btn_ddd: RelativeLayout = view.findViewById(R.id.btn_date_to_day)
         btn_ddd.setOnClickListener(this)
         return view
     }

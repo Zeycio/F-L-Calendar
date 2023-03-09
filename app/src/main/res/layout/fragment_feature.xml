@@ -13,9 +13,9 @@
         android:layout_height="match_parent">
 
         <View
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:background="@color/material_dynamic_primary95"
+            android:layout_width="413dp"
+            android:layout_height="734dp"
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -38,21 +38,25 @@
 
 
             <RelativeLayout
+                android:id="@+id/btn_date_to_day"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/material_dynamic_primary80"
-                android:clickable="true"
-                android:id="@+id/btn_date_to_day"
-                >
+                android:background="@color/material_dynamic_primary40"
+                android:clickable="true">
 
                 <TextView
+                    style="@style/TextAppearance.Material3.BodyMedium"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:text="Date To Day"
                     android:textSize="14sp"
-                    style="@style/TextAppearance.Material3.BodyMedium"
-                    />
+
+                    >
+
+                </TextView>
+
+
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
