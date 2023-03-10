@@ -8,58 +8,124 @@
 
     >
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <View
-            android:layout_width="413dp"
-            android:layout_height="734dp"
-
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView"
-            android:layout_width="340dp"
-            android:layout_height="100dp"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            app:cardBackgroundColor="@color/material_dynamic_neutral95"
             app:cardCornerRadius="15dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/dateDiff"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.237"
-            app:cardElevation="10dp">
-
+            app:layout_constraintVertical_bias="0.5">
 
             <RelativeLayout
                 android:id="@+id/btn_date_to_day"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/material_dynamic_primary40"
-                android:clickable="true">
+                android:clickable="true"
+                android:onClick="handleDateToDayClick">
 
                 <TextView
                     style="@style/TextAppearance.Material3.BodyMedium"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
                     android:text="Date To Day"
-                    android:textSize="14sp"
-
-                    >
-
-                </TextView>
-
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
 
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/dateDiff"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            app:cardBackgroundColor="@color/material_dynamic_neutral95"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView"
+            app:layout_constraintVertical_bias="0.5">
+
+            <RelativeLayout
+                android:id="@+id/btn_date_diff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:onClick="handleDateDiffClick">
+
+                <TextView
+                    style="@style/TextAppearance.Material3.BodyMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:text="Date Difference"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+                    android:id="@+id/emptC"
+                    android:layout_width="400dp"
+                    android:layout_height="200dp"
+                    app:cardBackgroundColor="@color/material_dynamic_neutral95"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="10dp"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/dateDiff"
+                    app:layout_constraintVertical_bias="0.5">
+
+                <RelativeLayout
+                    android:id="@+id/empt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:onClick="handleDateDiffClick">
+
+                    <TextView
+                        style="@style/TextAppearance.Material3.BodyMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:text="gonna add soon"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
 
 </FrameLayout>
