@@ -23,7 +23,7 @@ class Date_to_Day : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_date_to_day)
          val calv =findViewById<CalendarView>(R.id.CalV1)
-
+        val getda = findViewById<TextView>(R.id.getd)
         datePicker = findViewById(R.id.dpd)
 
 
@@ -39,11 +39,11 @@ class Date_to_Day : AppCompatActivity() {
             val dayOfWeek = SimpleDateFormat("EEEE", Locale.getDefault()).format(calendar.time)
 
 
-            val message = "Selected date is $dayOfWeek"
             calendar.set(year, month, dayOfMonth)
             calv.date = calendar.timeInMillis
+            getda.text= "it's $dayOfWeek "
 
-            Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+
         }
 
     }
