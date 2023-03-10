@@ -14,32 +14,32 @@
 
        <DatePicker
            android:id="@+id/start_date_picker"
-           android:layout_width="match_parent"
-           android:layout_height="235dp"
+           android:layout_width="331dp"
+           android:layout_height="202dp"
            android:calendarViewShown="false"
            android:datePickerMode="spinner"
            app:layout_constraintBottom_toBottomOf="parent"
            app:layout_constraintEnd_toEndOf="parent"
-           app:layout_constraintHorizontal_bias="1.0"
+           app:layout_constraintHorizontal_bias="0.91"
            app:layout_constraintStart_toStartOf="parent"
            app:layout_constraintTop_toTopOf="parent"
-           app:layout_constraintVertical_bias="0.181"
+           app:layout_constraintVertical_bias="0.454"
 
            />
 
        <DatePicker
            android:id="@+id/end_date_picker"
-           android:layout_width="match_parent"
-           android:layout_height="225dp"
+           android:layout_width="363dp"
+           android:layout_height="198dp"
            android:calendarViewShown="false"
            android:datePickerMode="spinner"
            android:hapticFeedbackEnabled="true"
            app:layout_constraintBottom_toBottomOf="parent"
            app:layout_constraintEnd_toEndOf="parent"
-           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintHorizontal_bias="0.002"
            app:layout_constraintStart_toStartOf="parent"
            app:layout_constraintTop_toTopOf="parent"
-           app:layout_constraintVertical_bias="0.642" />
+           app:layout_constraintVertical_bias="0.446" />
 
        <Button
            android:id="@+id/calculate_button"
