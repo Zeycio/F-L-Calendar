@@ -63,8 +63,8 @@ class featureFragment : Fragment(), View.OnClickListener {
                 val intent1 = Intent(activity,Date_to_Day::class.java)
                 startActivity(intent1)
             }
-            R.id.btn_date_diff -> {
-                val intent5 = Intent(activity,dayDate_diff::class.java)
+           R.id.btn_date_diff -> {
+                val intent5 = Intent(activity,Date_Dif::class.java)
                 startActivity(intent5)
             }
             else -> {}
