@@ -85,6 +85,7 @@
                     android:textSize="18sp" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
                     android:id="@+id/emptC"
                     android:layout_width="400dp"

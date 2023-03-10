@@ -38,6 +38,8 @@ class featureFragment : Fragment(), View.OnClickListener {
         val view: View = inflater!!.inflate(R.layout.fragment_feature, container, false)
         val btn_ddd: RelativeLayout = view.findViewById(R.id.btn_date_to_day)
         btn_ddd.setOnClickListener(this)
+        val btn_date_dif: RelativeLayout = view.findViewById(R.id.btn_date_diff)
+        btn_date_dif.setOnClickListener(this)
         return view
     }
 
@@ -60,6 +62,10 @@ class featureFragment : Fragment(), View.OnClickListener {
             R.id.btn_date_to_day -> {
                 val intent1 = Intent(activity,Date_to_Day::class.java)
                 startActivity(intent1)
+            }
+            R.id.btn_date_diff -> {
+                val intent5 = Intent(activity,dayDate_diff::class.java)
+                startActivity(intent5)
             }
             else -> {}
         }
