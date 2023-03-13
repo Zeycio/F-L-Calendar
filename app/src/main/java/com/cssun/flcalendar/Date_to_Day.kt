@@ -47,6 +47,7 @@ class Date_to_Day : AppCompatActivity() {
         }
 
     }
+
 }
 
 
