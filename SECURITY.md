@@ -1,5 +1,5 @@
 # Security Policy
 
-offline app , no personal data is collected..
+Offline app , No personal data is collected..
 
 
