@@ -14,7 +14,7 @@ class about : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_about)
         val updbtn=findViewById<Button>(R.id.upbtn)
-        val sathdbtn=findViewById<Button>(R.id.sath)
+        val sathdbtn=findViewById<Button>(R.id.insta_bt)
         updbtn.setOnClickListener {
             Toast.makeText(this@about,"First Donate next Update", Toast.LENGTH_SHORT).show()
         }

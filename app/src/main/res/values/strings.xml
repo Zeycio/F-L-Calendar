@@ -2,4 +2,12 @@
     <string name="app_name">FL Calendar</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="date_to_day">Date To Day</string>
+    <string name="day_to_year_month_week_conversion">Day to year month week Conversion</string>
+    <string name="about_description">a calendar app which can shows a basic calendar view.\n \n
+....HAS.... \n \n   *   date do day conversion.\n   *   difference between two dates.\n   *   day to year, month, week conversion.\n
+</string>
+    <string name="app_version_1_0">App Version : 1.0</string>
+    <string name="check_for_update">Check for Update</string>
+    <string name="about">About</string>
 </resources>

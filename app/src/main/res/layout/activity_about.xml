@@ -6,27 +6,39 @@
     android:layout_height="match_parent"
     tools:context=".about">
 
+    <Button
+        android:id="@+id/github_bt"
+        android:layout_width="65dp"
+        android:layout_height="44dp"
+        app:icon="@drawable/round_info_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.931" />
+
     <TextView
         android:id="@+id/atext"
         style="@style/TextAppearance.Material3.BodyLarge"
-        android:layout_width="341dp"
-        android:layout_height="226dp"
-        android:text="blablabla....."
-        android:textSize="16dp"
+        android:layout_width="336dp"
+        android:layout_height="311dp"
+        android:text="@string/about_description"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.41"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.177" />
+        app:layout_constraintVertical_bias="0.264" />
 
     <TextView
         android:id="@+id/aver"
         style="@style/TextAppearance.Material3.BodyLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="About"
-        android:textSize="30dp"
+        android:text="@string/about"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,37 +52,37 @@
         style="@style/TextAppearance.Material3.BodyLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="App Version : 1.0"
-        android:textSize="30dp"
+        android:text="@string/app_version_1_0"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.424" />
+        app:layout_constraintVertical_bias="0.646" />
 
     <Button
         android:id="@+id/upbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Check for Update"
+        android:text="@string/check_for_update"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.138"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.514" />
+        app:layout_constraintVertical_bias="0.729" />
 
     <Button
-        android:id="@+id/sath"
+        android:id="@+id/insta_bt"
         android:layout_width="65dp"
         android:layout_height="44dp"
-        app:icon="@drawable/round_info_24"
+        app:icon="@drawable/insta_icon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.926" />
+        app:layout_constraintVertical_bias="0.931" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

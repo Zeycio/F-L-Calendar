@@ -13,7 +13,7 @@
     >
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -53,7 +53,7 @@
                     android:layout_marginTop="42dp"
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="38dp"
-                    android:text="Date To Day"
+                    android:text="@string/date_to_day"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
 
@@ -167,7 +167,7 @@
                         android:layout_marginEnd="18dp"
 
                         android:layout_marginBottom="25dp"
-                        android:text="Day to year month week Conversion"
+                        android:text="@string/day_to_year_month_week_conversion"
                         android:textColor="@color/black"
                         android:textSize="18sp" />
 
