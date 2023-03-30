@@ -10,8 +10,4 @@ HAS
 
 * day to year, month, week conversion
 
-
-
 # Minimum android version: Android 12
-
-Note: I have no idea how it works.. The code is very bad.... my first project...
