@@ -1,4 +1,4 @@
-# F-L-Calendar
+# FL Calendar
 
 a calendar app  which can shows a basic calendar view.
 
