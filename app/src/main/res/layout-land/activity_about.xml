@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+    
+  
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,27 +8,39 @@
     android:layout_height="match_parent"
     tools:context=".about">
 
-    <TextView
-        android:id="@+id/atext"
-        style="@style/TextAppearance.Material3.BodyLarge"
-        android:layout_width="277dp"
-        android:layout_height="109dp"
-        android:text="blablabla....."
-        android:textSize="16dp"
+    <Button
+        android:id="@+id/github_bt"
+        android:layout_width="65dp"
+        android:layout_height="44dp"
+        app:icon="@drawable/github_icon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintHorizontal_bias="0.606"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.354" />
+        app:layout_constraintVertical_bias="0.792" />
+
+    <TextView
+        android:id="@+id/ab_text"
+        style="@style/TextAppearance.Material3.BodyLarge"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:text="@string/about_description"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
 
     <TextView
         android:id="@+id/aver"
         style="@style/TextAppearance.Material3.BodyLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="About"
-        android:textSize="30dp"
+        android:text="@string/about"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,37 +54,38 @@
         style="@style/TextAppearance.Material3.BodyLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="App Version : 1.0"
-        android:textSize="30dp"
+        android:text="@string/app_version_1_0"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintHorizontal_bias="0.879"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.673" />
+        app:layout_constraintVertical_bias="0.223" />
 
     <Button
         android:id="@+id/upbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Check for Update"
+        android:text="@string/check_for_update"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintHorizontal_bias="0.819"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.688" />
+        app:layout_constraintVertical_bias="0.498" />
 
     <Button
         android:id="@+id/insta_bt"
         android:layout_width="65dp"
         android:layout_height="44dp"
-        app:icon="@drawable/round_info_24"
+        app:icon="@drawable/insta_icon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.942"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.926" />
+        app:layout_constraintVertical_bias="0.792" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
