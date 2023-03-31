@@ -2,7 +2,6 @@ package com.cssun.flcalendar
 
 
 import android.annotation.SuppressLint
-import android.media.audiofx.HapticGenerator
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
